@@ -1,0 +1,30 @@
+* Introduction
+
+This project shows 2 ways of parsing markdown files for free flowing texts:
+
+1. Reading from a markdown file
+2. Making a network request on github
+
+Both ways are flexible and there's no performance issues yet encountered
+
+The markdown library used is "mistune"; chosen because of it's speed
+and ease of use.
+
+* How to run
+
+- Clone the repository
+: https://github.com/BonfaceKilz/flask-mardown-parser-demo.git
+
+- Set up and activate the venv
+#+begin_src sh
+virtualenv --python /usr/bin/python3.7 venv
+source venv/bin/activate
+#+end_src
+
+- Run the server
+#+begin_src sh
+python run.py
+#+end_src
+
+Go to *localhost:8080/test* to view the parsed md file from local file
+system; and *localhost:8080/test2* to view parsed md from github.
